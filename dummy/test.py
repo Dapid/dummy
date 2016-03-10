@@ -3,11 +3,12 @@ import random
 import multiprocessing
 
 def f(x):
-    time.sleep(random.random() * 10)
+    print('*')
+    time.sleep(2)
     print(x)
 
 print('Ready')
-pool = multiprocessing.Pool(5)
+pool = multiprocessing.Pool(2)
 print('Steady')
-pool.map(f, range(10))
+pool.map(f, range(5))
 print('Done!')
