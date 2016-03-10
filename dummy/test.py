@@ -9,5 +9,5 @@ def f(x):
 print('Ready')
 pool = multiprocessing.Pool(5)
 print('Steady')
-pool.map(f, range(1000))
+pool.map(f, range(10))
 print('Done!')
